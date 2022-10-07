@@ -1,0 +1,37 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 32px 0;
+  box-sizing: border-box;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.box {
+  width: 75px;
+  height: 75px;
+  background: slateblue;
+  padding: 8px;
+  display: grid;
+  place-content: center;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+.box {
+  animation: bounce 300ms alternate infinite cubic-bezier(0.2, 0.65, 0.6, 1);
+}
